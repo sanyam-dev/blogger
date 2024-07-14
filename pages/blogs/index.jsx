@@ -15,13 +15,13 @@ export default function blogHome({posts}){
 	return(
 		<>
 		<Layout>
-			<div id="blogs-home-container" className='sm:grid grid-cols-5'>
-				<div id="blog-home-header" className='flex items-center justify-center sm:col-span-2 sm:h-screen'>
-					<div id="blog-home" className='font-serif font-bold text-3xl sm:text-[70px]'>
+			<div id="blogs-home-container" className='sm:grid grid-cols-5 mt-10'>
+				<div id="blog-home-header" className='flex items-center justify-center sm:col-span-2 sm:h-[29rem]  sm:border-r-4 border-black'>
+					<div id="blog-home" className='font-serif font-bold text-3xl border-b-2 border-black sm:border-none sm:text-[70px]'>
 						Blogs
 					</div>
 				</div>
-				<div id="blogList" className='overflow-auto col-span-3 mt-10 sm:h-screen'>
+				<div id="blogList" className='overflow-auto col-span-3 mt-10 ml-5 sm:ml-10'>
 					{posts.map(post=> {
 						const date = new Date(post.last_edited_time).toLocaleString(
 							"en-US",
@@ -42,7 +42,7 @@ export default function blogHome({posts}){
 								<p className={styles.postDescription}>{date}</p>
 								{
 									!isHide? 
-									<Link href={`/blogs/${post.id}`}>Read post →</Link>
+									<Link href={`/blogs/${post.id}`}>Read post  →</Link>
 									:
 									null
 								}
