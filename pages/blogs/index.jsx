@@ -1,16 +1,11 @@
-import {getDatabase} from '../../lib/notion'
 // import BlogCard from '../../components/BlogCard'
 import styles from "./index.module.css";
 import Link from "next/link";
-import { Text } from "./[id].js";
-import { useState } from 'react';
+// import { Text } from "./[id].js";
 import Layout from '@/components/Layout'
+import {getSortedPostsData} from '../../lib/posts.js';
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
-
-export default function blogHome({posts}){
-	const [isHide, setIsHide] = useState(true)
-	setTimeout(()=>setIsHide(false), 200)
+export default function blogHome({database}){
 	
 	return(
 		<>
@@ -22,33 +17,21 @@ export default function blogHome({posts}){
 					</div>
 				</div>
 				<div id="blogList" className='overflow-auto col-span-3 mt-10 ml-5 sm:ml-10'>
-					{posts.map(post=> {
-						const date = new Date(post.last_edited_time).toLocaleString(
-							"en-US",
-							{
-								month: "short",
-								day: "2-digit",
-								year: "numeric",
-							}
-						);
-						return (
-							<li key={post.id} className={styles.post}>
-								<h3 className={styles.postTitle}>
-									<Link href={`/blogs/${post.id}`}>
-										<Text text={post.properties.Title.title} />
-									</Link>
-								</h3>
+					{database.map(({id, date, title})=> {
 
-								<p className={styles.postDescription}>{date}</p>
-								{
-									!isHide? 
-									<Link href={`/blogs/${post.id}`}>Read post  →</Link>
-									:
-									null
-								}
-							</li>
-						);
-					})}
+							return (
+								<li key={id} className={styles.post}>
+									<h3 className={styles.postTitle}>
+										<Link href={`/blogs/${id}`}>
+											{title} 
+										</Link>
+									</h3>
+
+									<p className={styles.postDescription}>{date}</p>
+										<Link href={`/blogs/${id}`}>Read post  →</Link>
+								</li>
+							);
+						})}
 				</div>
 			</div>
 		</Layout>
@@ -57,12 +40,10 @@ export default function blogHome({posts}){
 }
 
 export async function getStaticProps() {
-	const database = await getDatabase(databaseId);
+	const database = getSortedPostsData();
 	return {
 		props: {
-			posts: database
+			database
 		},
-		revalidate: 1
 	}
-	 
 }

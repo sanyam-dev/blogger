@@ -6,7 +6,7 @@ const Header = () => {
 		<>
 			<div id = "name-container">
 					<div id="name-1" className="hidden sm:block md:block opacity-100">
-						<NameBlock name = "Saumya Mathur" email = "xyz@live.in"/>
+						<NameBlock name = "Saumya Mathur" email = "mathur.saumya@live.in"/>
 					</div>
 					<div id="navbar-container" className="py-5">
 						<div id="navbar">
@@ -16,7 +16,7 @@ const Header = () => {
 			</div>
 			<div id="name-2-container" 
 				className="block col-span-3 sm:hidden">
-					<NameBlock name = "Saumya Mathur" email = "xyz@live.in"/>
+					<NameBlock name = "Saumya Mathur" email = "mathur.saumya@live.in"/>
 				</div>
 		</>
 	)
