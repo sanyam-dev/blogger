@@ -2,7 +2,6 @@ import {getPostContent, getSortedPostsData} from '../../lib/posts'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
-// import rehypeHighlight from 'rehype-highlight';
 import style from './markdown-style.module.css'
 import { MathJax } from 'better-react-mathjax';
 
