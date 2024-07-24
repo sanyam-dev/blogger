@@ -12,7 +12,7 @@ export default function Post({content}) {
   }
   return (
 		<div className='sm:flex sm:justify-center'>
-			<article style={{ margin: '2rem'}} className='prose'>
+			<article style={{ margin: '2rem'}} className='prose prose-code:{language-html}'>
 
 					<MathJax dynamic inline>
 						<Markdown 
