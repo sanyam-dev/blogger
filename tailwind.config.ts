@@ -8,6 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:first-of-type::after': false,
+            blockquote: {
+              p:{
+                backgroundColor:'#F5F5F5',
+                fontStyle: 'normal',
+                padding: '0.25rem',
+                borderRadius: '5px',
+              },
+            },
+          },
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
