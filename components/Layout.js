@@ -4,11 +4,10 @@ export default function Layout ({children}){
 	return (
 		<>
 			<Header/>
-			<main>
-				{
-					children
-				}
+			<main className='mt-[200px] -z-20 sm:mt-auto'>
+				{children}
 			</main>
+			{/* FOOTER */}
 		</>
 	)
 }
