@@ -53,7 +53,7 @@ export default function GalleryLayout({content}){
   const imageGridArray = distributeImage(imagesSrc);
   return(
     <>
-    <div className="grid grid-cols-2  gap-4 md:grid-cols-3">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
       <GalleryColumn imageArray={imageGridArray[0]}/>
       <GalleryColumn imageArray={imageGridArray[1]}/>
       <GalleryColumn imageArray={imageGridArray[2]}/>
