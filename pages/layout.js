@@ -13,7 +13,7 @@ export default function DashBoardLayout({children, titleCard}){
 				</div>
 				<div 
           id="list" 
-          className='col-span-3 px-10
+          className='col-span-3 px-10 mt-[20px] sm:mt-[0px]
           sm:px-20 sm:shadow-inner overflow-scroll'>
             {children}
 				</div>
