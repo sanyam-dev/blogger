@@ -11,20 +11,22 @@ export default function Post({content}) {
     return <div />;
   }
   return (
-		<div className='sm:flex sm:justify-center'>
-			<article style={{ margin: '2rem'}} className='prose prose-code:{language-html}'>
+		<div id='blog-container-flexbox' className='sm:flex sm:justify-center'>
+			<div id = 'markdown-wrapper' className='sm:w-1/2'>
+				<article style={{ margin: '2rem'}} className='prose prose-code:{language-html}'>
 
-					<MathJax dynamic inline>
-						<Markdown 
-							remarkPlugins={[remarkGfm]} 
-							rehypePlugins={[rehypeRaw]} 
-							remarkRehypeOptions={{ passThrough: ['link'] }}
-							className={style.markdown}
-							>
-						{content}
-						</Markdown>
-					</MathJax>
-			</article>
+						<MathJax dynamic inline>
+							<Markdown 
+								remarkPlugins={[remarkGfm]} 
+								rehypePlugins={[rehypeRaw]} 
+								remarkRehypeOptions={{ passThrough: ['link'] }}
+								className={style.markdown}
+								>
+							{content}
+							</Markdown>
+						</MathJax>
+				</article>
+			</div>
 		</div>
   );
 }

@@ -6,7 +6,6 @@ import DashboardLayout from '@/pages/layout'
 import {getSortedPostsData} from '../../lib/posts.js';
 export default function blogHome({database}){
 	const children = database.map(({id, date, title})=> {
-
 		return (
 			<li key={id} className={styles.post}>
 				<h3 className={styles.postTitle}>
