@@ -7,7 +7,7 @@ const Header = () => {
 	const cv_path = "@/public/cv.pdf"
 	
 	return (
-		<>
+		<div className='sm:h-[25vh]'>
 			<div 
 				id = "name-container-wrapper"
 				className='fixed top-0 left-0 right-0 bg-white z-20 shadow-md sm:relative sm:shadow-none'
@@ -27,7 +27,7 @@ const Header = () => {
 						<NameBlock name = {name} email = {email} path = {cv_path}/>
 					</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

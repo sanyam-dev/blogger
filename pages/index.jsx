@@ -7,6 +7,7 @@ function TitleImage(){
 	return(
 		<Image
 			src = "/img/user.png"
+			priority={true}
 			alt="not found image!"
 			width="40"
 			height="40"

@@ -12,7 +12,7 @@ export default function ImageContainer({image, index}){
         key = {index}
         src = {image}
         width={'0'}
-        height='0'
+        height={'0'}
         alt = {image}
       />
     </div>

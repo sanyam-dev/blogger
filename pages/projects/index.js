@@ -4,7 +4,9 @@ import DashboardLayout from '../layout'
 export default function ProjectHome(){
   return(
     <Layout>
-      <DashboardLayout children = {" "} titleCard = {'Projects'}/>
+      <DashboardLayout 
+				children = {" "} 
+				titleCard = {'Projects'}/>
     </Layout>
   )
 }

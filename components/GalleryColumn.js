@@ -7,6 +7,7 @@ export default function GalleryColumn({imageArray}){
           imageArray.map((image, index)=>{
             return(
               < ImageContainer 
+								rel = "preload"
                 image = {image}
                 key = {index}
               />
