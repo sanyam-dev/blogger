@@ -1,0 +1,95 @@
+---
+title: 'Hostel Items'
+date: '25-07-2024'
+---
+# Hostel Items
+
+- **Toiletries**
+    - [ ]  Tooth Brush
+    - [ ]  Toothpaste
+    - [ ]  Tongue Cleaner
+    - [ ]  Bucket
+    - [ ]  Mug
+    - [ ]  Body Soap
+    - [ ]  Lufa
+    - [ ]  Shampoo
+    - [ ]  Hair conditioner
+    - [ ]  Shaving Kit
+    - [ ]  Bathing Towels
+    - [ ]  Liquid Handwash
+    - [ ]  Hair Oil
+    - [ ]  Comb
+    - [ ]  Deodrant
+    - [ ]  Body lotions and cream
+    
+- **Clothing and Clothes Related Products**
+    - [ ]  Liquid Detergent
+    - [ ]  T-Shirts
+    - [ ]  Shirts
+    - [ ]  Jeans
+    - [ ]  Track Pants
+    - [ ]  Jackets
+    - [ ]  Hoodies
+    - [ ]  Laptop bag
+    - [ ]  Socks
+    - [ ]  Shoes
+    - [ ]  Sandals
+    - [ ]  Slippers
+    - [ ]  Cloth hanger
+    - [ ]  Clips
+    - [ ]  Rope to hang clothes to
+    - [ ]  Electric Iron
+    - [ ]  Hand Towels
+    - [ ]  Wallet
+    - [ ]  Undergarments
+    
+- **Stationary**
+    - [ ]  Notebook
+    - [ ]  Books
+    - [ ]  Novels
+    - [ ]  MacBook & its charger
+    - [ ]  Phone & its charger
+    - [ ]  Watch & its charger
+    - [ ]  Earphones
+    - [ ]  Pen stand
+    - [ ]  Extension plug
+    
+- **First Aid**
+    - [ ]  Thermometer
+    - [ ]  Oxymeter
+    - [ ]  Dettol solution
+    - [ ]  Betadene
+    - [ ]  Bandages
+    - [ ]  ORS pouch
+    - [ ]  Steam inhaler
+    - [ ]  Vicks
+    - [ ]  Domperidone tablets
+    - [ ]  Paracetamol
+    - [ ]  Mask
+    - [ ]  Sanitizer
+    
+- **Home utilities**
+    - [ ]  Dish
+    - [ ]  Bowl
+    - [ ]  Spoon
+    - [ ]  Fork
+    - [ ]  Knife
+    - [ ]  Sauce Pan
+    - [ ]  Induction stove
+    - [ ]  Tea bag
+    - [ ]  Coffee sachet
+    - [ ]  Cup
+    - [ ]  Sipper
+    - [ ]  2 1 Litre Water Bottles
+    - [ ]  Dishwashing Liquids
+    - [ ]  Utensils cleaning brush
+    - [ ]  Bottle cleaning brush
+    - [ ]  Doormat
+    - [ ]  Pillow and pillow covers
+    - [ ]  Mattress
+    - [ ]  Quilts
+    - [ ]  Blankets
+    - [ ]  Hammer and Nails
+    - [ ]  Screwdriver
+    - [ ]  Curtains
+    - [ ]  Lock and key

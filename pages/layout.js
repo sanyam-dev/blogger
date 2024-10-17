@@ -2,19 +2,19 @@ export default function DashBoardLayout({children, titleCard}){
   return(
     <div 
       id="home-container" 
-      className='sm:grid grid-cols-5 sm:h-[29rem]'>
+      className='sm:grid grid-cols-5 sm:h-[34rem]'>
 				<div 
 					id="home-header" 
 					className='flex items-center justify-center sm:col-span-2 sm:shadow-inner sm:border-r-4 border-black bg-local'
 					>
-					<div id="home" className='font-serif font-bold text-3xl border-b-2 border-black  sm:border-none sm:text-[70px]'>
+					<div id="home" className='font-serif font-bold text-3xl border-b-2 border-black sm:border-none sm:text-[70px]'>
 						{titleCard}
 					</div>
 				</div>
 				<div 
           id="list" 
-          className='col-span-3 px-10 mt-[20px] sm:mt-[0px]
-          sm:px-20 sm:shadow-inner overflow-scroll'>
+          className='col-span-3 px-10 mt-[20px] sm:mt-[2px]
+          sm:px-20 sm:shadow-inner flex-grow overflow-y-scroll'>
             {children}
 				</div>
 			</div>

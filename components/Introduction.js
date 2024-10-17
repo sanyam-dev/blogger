@@ -9,7 +9,7 @@ export default function Introduction(){
 	return(
 		<>
 			<div id = "intro-wrapper"
-				className = "mt-[3em] sm:px-[50px] sm:mt-[9em] text-[14px] sm:text-[16px]"
+				className = "my-[3em] sm:px-[50px] sm:mt-[9em] text-[14px] sm:text-[16px]"
 			>	 
 				<div id=	"intro"
 					className="text-[25px] font-serif"
