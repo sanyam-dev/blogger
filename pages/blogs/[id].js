@@ -2,7 +2,7 @@ import {getPostContent, getSortedPostsData} from '../../lib/posts'
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
-import style from './markdown-style.module.css'
+import style from '@/styles/markdown-style.module.css'
 import { MathJax } from 'better-react-mathjax';
 
 
@@ -32,7 +32,8 @@ export default function Post({content}) {
 }
 
 export async function getStaticPaths(){
-	const database = getSortedPostsData();
+	const postsDirectory = 'public/blogs'
+	const database = getSortedPostsData(postsDirectory);
 	return {
 		paths: database.map((page) => ({ params: { id: page.id } })),
 		fallback: true,
@@ -40,8 +41,9 @@ export async function getStaticPaths(){
 };
 
 export async function getStaticProps(context){
-	const { id } = context.params;
-	const content = await getPostContent(id); 
+	const { id } = context.params;	
+	const postsDirectory= 'public/blogs';
+	const content = await getPostContent(id, postsDirectory); 
 	
 	return {
 		props: {

@@ -10,7 +10,7 @@ export default function blogHome({database}){
 				<li key={id} className='my-[40px]'>
 					<h3 className= "text-lg font-sans sm:text-2xl mb-[10px] hover:underline">
 						<Link href={`/blogs/${id}`}>
-							{title} 
+							{title}
 						</Link>
 					</h3>
 					<p className = 'mb-[12px]'>{date}</p>
@@ -29,8 +29,11 @@ export default function blogHome({database}){
 	)
 }
 
+
+
 export async function getStaticProps() {
-	const database = getSortedPostsData();
+	const postsDirectory= 'public/blogs'
+	const database = getSortedPostsData(postsDirectory);
 	return {
 		props: {
 			database
@@ -44,5 +47,4 @@ function wrapper(children){
 			{children}
 		</div>
 	)
-	
 }

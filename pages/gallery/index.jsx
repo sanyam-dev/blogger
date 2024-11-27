@@ -17,7 +17,9 @@ export default function GalleryHome({content}){
   const childComponent = getGalleryLayout(content);
   return(
     <Layout>
-      <DashboardLayout children={childComponent} titleCard={'Gallery'}/>
+      <DashboardLayout 
+				children={childComponent} 
+				titleCard={'Gallery'}/>
     </Layout>
   );
 }
