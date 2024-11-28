@@ -2,7 +2,7 @@ export default function DashBoardLayout({children, titleCard}){
   return(
     <div 
       id="home-container" 
-      className='sm:grid grid-cols-6 sm:h-[100%]'>
+      className='sm:grid grid-cols-5 sm:h-[100%]'>
 				<div 
 					id="home-header" 
 					className='sm:flex sm:items-center justify-center 
@@ -17,7 +17,7 @@ export default function DashBoardLayout({children, titleCard}){
 				</div>
 				<div 
           id="list" 
-          className='col-span-4 px-10 pt-[150px] sm:mt-[0px] sm:pt-[75px] 
+          className='col-span-3 px-10 pt-[150px] sm:mt-[0px] sm:pt-[75px] 
           sm:px-20 overflow-scroll list-none'>
             {children}
 				</div>
